@@ -87,7 +87,7 @@ function $(selector){
 
 function getMusicList(callback){
     var xhr = new XMLHttpRequest()
-    xhr.open('GET','https://bozi4444.github.io/bobo44/music.json',true)
+    xhr.open('GET','https://bozi4444.github.io/musicPlayer/music.json',true)
     xhr.onload = function(){
       if((xhr.status >= 200 && xhr.status < 300 )||xhr.status === 304){
         callback(JSON.parse(this.responseText))
